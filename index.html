@@ -3,9 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <title>BWD Bill Calculator</title>
   </head>
   <body>
+    <h1>Bill Calculator v.0.0.0</h1>
+
+    <div class="consumption">
+      <label for="consumption"></label>
+      <input type="number" name="consumption" id="consumption" />
+    </div>
+
+    <div class="classification">
+      <input
+        type="radio"
+        id="residential"
+        name="classification"
+        value="residental"
+      />
+      <label for="residential">Residental</label><br />
+
+      <input
+        type="radio"
+        id="government"
+        name="classification"
+        value="government"
+      />
+      <label for="government">Government</label><br />
+      <input
+        type="radio"
+        id="commercial"
+        name="classification"
+        value="commercial"
+      />
+      <label for="commercial">Commercial</label>
+    </div>
+
+    <button class="calculate">Calculate Bill</button>
+
     <script src="script.js"></script>
   </body>
 </html>

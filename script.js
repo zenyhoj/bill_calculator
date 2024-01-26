@@ -33,4 +33,13 @@ function calculateBill(classification, consumption) {
 }
 
 let total = calculateBill("Residential", 61);
-console.log(total);
+// console.log(total);
+
+//
+let btn = document.querySelector(".calculate");
+let inputVal = document.querySelector("input");
+
+btn.addEventListener("click", function () {
+  console.log("Yeeh you click me!");
+  console.log(inputVal);
+});
