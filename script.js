@@ -38,10 +38,8 @@ btn.addEventListener("click", function () {
   let radioVal = document.querySelector(
     'input[name="classification"]:checked'
   ).value;
-  // console.log(radioVal);
-  // console.log(inputVal);
+
   let total = calculateBill(radioVal, inputVal);
-  // console.log(total);
 
   let existingH2 = document.querySelector("h2");
   if (existingH2) {
