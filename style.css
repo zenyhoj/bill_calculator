@@ -3,6 +3,11 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  text-align: center;
+  margin: 0 auto;
+}
 label,
 input,
 button {
@@ -16,6 +21,7 @@ button {
 }
 
 h1 {
+  margin-bottom: 1rem;
   text-align: center;
 }
 

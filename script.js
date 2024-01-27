@@ -38,9 +38,10 @@ btn.addEventListener("click", function () {
   let radioVal = document.querySelector(
     'input[name="classification"]:checked'
   ).value;
-  console.log(radioVal);
-  console.log(inputVal);
+  // console.log(radioVal);
+  // console.log(inputVal);
   let total = calculateBill(radioVal, inputVal);
+  // console.log(total);
 
   let existingH2 = document.querySelector("h2");
   if (existingH2) {
@@ -48,8 +49,11 @@ btn.addEventListener("click", function () {
   }
 
   let h2 = document.createElement("h2");
-  let output = document.createTextNode(total);
+
+  let output = document.createTextNode(`Total Amount: ${total}`);
+
   h2.appendChild(output);
+  h2.style.marginBottom = "1.4rem";
   let h1 = document.querySelector("h1");
   h1.insertAdjacentElement("afterend", h2);
 });
