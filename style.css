@@ -44,3 +44,7 @@ h1 {
   padding: 15px 30px;
   border-radius: 3px;
 }
+
+input[type="number"] {
+  text-align: center;
+}

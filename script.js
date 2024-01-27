@@ -52,6 +52,8 @@ btn.addEventListener("click", function () {
 
   h2.appendChild(output);
   h2.style.marginBottom = "1.4rem";
+  h2.style.color = "blue";
+
   let h1 = document.querySelector("h1");
   h1.insertAdjacentElement("afterend", h2);
 });
