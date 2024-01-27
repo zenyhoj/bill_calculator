@@ -10,7 +10,7 @@ btn.addEventListener("click", function () {
   let amount = 0;
 
   function calculateBill(classification, consumption) {
-    if (classification === radioVal || classification === radioVal) {
+    if (classification === "residential" || classification === "government") {
       if (consumption <= 10) {
         amount = minAmountRes;
       } else if (consumption > 10 && consumption <= 20) {
