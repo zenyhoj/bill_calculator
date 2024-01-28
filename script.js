@@ -64,7 +64,7 @@ btn.addEventListener("click", function () {
   span.innerHTML = totalAmount;
 
   h2.appendChild(span);
-  console.log(span);
+  // console.log(span);
 
   // let output = document.createTextNode(`Total Amount: ${total}`);
 
