@@ -1,0 +1,6 @@
+const waterRates = [
+
+{ resGovtminAmount: 210, resGovt11to20: 24.50, resGovt21to30: 28.20, resGovt31to40: 32.40, resGovtover40: 37.20 },
+ { commlIndminAmount: 420, commlInd11to20: 49.00, commlInd21to30: 56.40, commlInd31to40: 64.80, commlIndover40: 74.40 },
+]
+
