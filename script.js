@@ -41,19 +41,12 @@ btn.addEventListener("click", function () {
 
   let total = calculateBill(radioVal, inputVal);
 
-  // let existingH2 = document.querySelector("h2");
-  // if (existingH2) {
-  //   existingH2.remove();
-  // }
-
-  // let h2 = document.createElement("h2");
   let h2 = document.querySelector(".amount");
-  // let totalAmount = total.toFixed(2);
+
   let totalAmount = total.toLocaleString("en-US", {
     style: "currency",
     currency: "PHP",
   });
-  // h2.innerHTML = `Total Amount: ${totalAmount}`;
 
   let existingSpan = document.querySelector("span");
   if (existingSpan) {
@@ -61,17 +54,10 @@ btn.addEventListener("click", function () {
   }
 
   let span = document.createElement("span");
-  span.innerHTML = totalAmount;
+  span.innerHTML = `Total Amount: ${totalAmount}`;
 
   h2.appendChild(span);
-  // console.log(span);
 
-  // let output = document.createTextNode(`Total Amount: ${total}`);
-
-  // h2.appendChild(output);
   h2.style.marginBottom = "1.4rem";
   h2.style.color = "blue";
-
-  // let h1 = document.querySelector("h1");
-  // h1.insertAdjacentElement("afterend", h2);
 });
